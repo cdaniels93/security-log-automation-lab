@@ -25,3 +25,9 @@ I ran the PowerShell export script on the Windows VM and verified that it create
 I attempted an SSH login with an incorrect password, then queried the Windows Security log for failed logons. The output showed the attempt as Event ID 4625.
 
 ![PowerShell output showing the failed login event](04-failed-login-table.png)
+
+## PowerShell failed-logon metric
+
+I used PowerShell to count Windows Security events for failed logons (Event ID 4625) and display the event times. In my run, the script found one failed-logon event.
+
+![PowerShell script output showing the failed-logon count](05-powershell-metric.png)
