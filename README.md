@@ -31,3 +31,9 @@ I attempted an SSH login with an incorrect password, then queried the Windows Se
 I used PowerShell to count Windows Security events for failed logons (Event ID 4625) and display the event times. In my run, the script found one failed-logon event.
 
 ![PowerShell script output showing the failed-logon count](05-powershell-metric.png)
+
+## Windows Event Viewer audit failure
+
+I used Event Viewer to locate the Windows Security audit failure created by my incorrect SSH login. The event was recorded as Event ID 4625.
+
+![Event Viewer showing the failed SSH login audit event](06-event-viewer-audit-failure.png)
