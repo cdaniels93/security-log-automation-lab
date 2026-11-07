@@ -61,3 +61,9 @@ I updated the collection script to read connection settings from a separate conf
 I ran `analyze_logs.py` against the collected lab logs to check for repeated failed logins and suspicious web requests. In this run, the script did not flag threats in the current logs because the activity did not meet its configured thresholds.
 
 ![Analysis results from the collected logs](10-live-log-analysis.png)
+
+## Analyzing the sample Windows events
+
+I reran the analysis using the provided sample Windows log. It showed repeated failed logons from three IP addresses: `192.168.1.100` (6 events), `203.0.113.10` (3), and `172.16.0.50` (2). The Linux and web logs had no matching activity from those IPs in this run.
+
+![Analysis results using the sample Windows log](11-sample-log-analysis.png)
