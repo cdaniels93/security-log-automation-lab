@@ -79,3 +79,9 @@ I used Pandas and Matplotlib to count the HTTP status codes in the Apache access
 I added Pandas-based analysis that counted successful and error web responses and summarized activity across the log sources. This run showed 3 successful responses and no 401/404 errors, so the success-to-error ratio was undefined. The script also generated CSV reports.
 
 ![Enhanced analysis script output](13-enhanced-analysis.png)
+
+## Verifying alert delivery
+
+I checked the Ubuntu VM’s local mailbox and confirmed that the threat alert email was received.
+
+![Local mailbox showing the alert email](14-email-verification.png)
