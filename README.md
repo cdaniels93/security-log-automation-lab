@@ -49,3 +49,9 @@ I used the PowerShell graphical event viewer to review Security log entries. It 
 I ran `fetch_logs.py` on the Ubuntu collection VM and checked that it saved the Linux authentication log, Windows Security events JSON, and Apache access log in `/root/lab1/logs`.
 
 ![Log collection script and collected files](08-log-collection-verification.png)
+
+## Enhancing log collection
+
+I updated the collection script to read connection settings from a separate configuration file, record errors, and save recent authentication and web log entries for review. I kept credentials out of this public repository.
+
+![Enhanced log collection script running](09-enhanced-log-collection.png)
