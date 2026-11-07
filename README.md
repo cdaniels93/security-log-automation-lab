@@ -55,3 +55,9 @@ I ran `fetch_logs.py` on the Ubuntu collection VM and checked that it saved the 
 I updated the collection script to read connection settings from a separate configuration file, record errors, and save recent authentication and web log entries for review. I kept credentials out of this public repository.
 
 ![Enhanced log collection script running](09-enhanced-log-collection.png)
+
+## Analyzing the collected logs
+
+I ran `analyze_logs.py` against the collected lab logs to check for repeated failed logins and suspicious web requests. In this run, the script did not flag threats in the current logs because the activity did not meet its configured thresholds.
+
+![Analysis results from the collected logs](10-live-log-analysis.png)
