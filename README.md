@@ -13,3 +13,9 @@ I used Linux commands to find failed password attempts, extract and count their 
 I tested a regular expression against a failed-login message. The pattern handles both ordinary usernames and messages that include `invalid user`, helping extract the attempted username for review.
 
 ![Regex101 matching a username in a failed-login log](02-regex-username-test.png)
+
+## Windows Security log export
+
+I ran the PowerShell export script on the Windows VM and verified that it created the Security events JSON file in `C:\Logs`. This file was later used for analysis on the Ubuntu collection VM.
+
+![Windows C Logs folder showing the exported JSON file](03-windows-json-export.png)
