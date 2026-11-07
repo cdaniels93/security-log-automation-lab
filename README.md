@@ -85,3 +85,9 @@ I added Pandas-based analysis that counted successful and error web responses an
 I checked the Ubuntu VM’s local mailbox and confirmed that the threat alert email was received.
 
 ![Local mailbox showing the alert email](14-email-verification.png)
+
+## Enhanced email alert
+
+I enhanced the alert script to create a formatted email summary of correlated threats and log email-delivery errors. The script ran successfully and reported that it sent the alert.
+
+![Enhanced alert script running successfully](15-enhanced-alert.png)
