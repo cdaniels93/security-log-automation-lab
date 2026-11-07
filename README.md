@@ -19,3 +19,9 @@ I tested a regular expression against a failed-login message. The pattern handle
 I ran the PowerShell export script on the Windows VM and verified that it created the Security events JSON file in `C:\Logs`. This file was later used for analysis on the Ubuntu collection VM.
 
 ![Windows C Logs folder showing the exported JSON file](03-windows-json-export.png)
+
+## Failed SSH login event
+
+I attempted an SSH login with an incorrect password, then queried the Windows Security log for failed logons. The output showed the attempt as Event ID 4625.
+
+![PowerShell output showing the failed login event](04-failed-login-table.png)
