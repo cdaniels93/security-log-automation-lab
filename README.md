@@ -37,3 +37,9 @@ I used PowerShell to count Windows Security events for failed logons (Event ID 4
 I used Event Viewer to locate the Windows Security audit failure created by my incorrect SSH login. The event was recorded as Event ID 4625.
 
 ![Event Viewer showing the failed SSH login audit event](06-event-viewer-audit-failure.png)
+
+## GUI review of failed login events
+
+I used the PowerShell graphical event viewer to review Security log entries. It displayed the failed SSH login as Event ID 4625, matching the event I found in Event Viewer.
+
+![PowerShell GUI showing the failed login event](07-gui-event-viewer.png)
