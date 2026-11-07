@@ -67,3 +67,9 @@ I ran `analyze_logs.py` against the collected lab logs to check for repeated fai
 I reran the analysis using the provided sample Windows log. It showed repeated failed logons from three IP addresses: `192.168.1.100` (6 events), `203.0.113.10` (3), and `172.16.0.50` (2). The Linux and web logs had no matching activity from those IPs in this run.
 
 ![Analysis results using the sample Windows log](11-sample-log-analysis.png)
+
+## Visualizing web status codes
+
+I used Pandas and Matplotlib to count the HTTP status codes in the Apache access log and display the counts as a bar graph.
+
+![Bar graph of HTTP status codes](12-web-status-graph.png)
