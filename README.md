@@ -73,3 +73,9 @@ I reran the analysis using the provided sample Windows log. It showed repeated f
 I used Pandas and Matplotlib to count the HTTP status codes in the Apache access log and display the counts as a bar graph.
 
 ![Bar graph of HTTP status codes](12-web-status-graph.png)
+
+## Enhanced Pandas analysis
+
+I added Pandas-based analysis that counted successful and error web responses and summarized activity across the log sources. This run showed 3 successful responses and no 401/404 errors, so the success-to-error ratio was undefined. The script also generated CSV reports.
+
+![Enhanced analysis script output](13-enhanced-analysis.png)
