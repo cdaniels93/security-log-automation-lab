@@ -43,3 +43,9 @@ I used Event Viewer to locate the Windows Security audit failure created by my i
 I used the PowerShell graphical event viewer to review Security log entries. It displayed the failed SSH login as Event ID 4625, matching the event I found in Event Viewer.
 
 ![PowerShell GUI showing the failed login event](07-gui-event-viewer.png)
+
+## Collecting logs from the lab systems
+
+I ran `fetch_logs.py` on the Ubuntu collection VM and checked that it saved the Linux authentication log, Windows Security events JSON, and Apache access log in `/root/lab1/logs`.
+
+![Log collection script and collected files](08-log-collection-verification.png)
