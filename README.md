@@ -91,3 +91,23 @@ I checked the Ubuntu VM’s local mailbox and confirmed that the threat alert em
 I enhanced the alert script to create a formatted email summary of correlated threats and log email-delivery errors. The script ran successfully and reported that it sent the alert.
 
 ![Enhanced alert script running successfully](15-enhanced-alert.png)
+
+## Challenges I encountered
+
+During the lab, I worked through several issues while setting up and running the scripts. The PowerShell export script needed a small encoding adjustment, and I corrected the Windows log export after finding a stray Markdown code fence in the script. I also had to update the lab machine IP addresses and resolve file path and permissions issues while collecting logs.
+
+The log collection script initially saved an empty filtered web log because there were no recent web requests. After generating a new request and running the script again, it captured the entry. I also found that the Windows JSON export included a UTF-8 byte order mark, so I updated the analysis script to read the file with `utf-8-sig`.
+
+These troubleshooting steps helped me verify each stage: exporting, transferring, filtering, analyzing, and reporting the logs.
+
+## What I learned
+
+I learned how to collect security logs from Linux, Windows, and a web server and use them together during an investigation. I practiced searching Linux logs with command-line tools, using PowerShell to review Windows Event ID 4625, and writing Python code to collect and filter recent log entries.
+
+I also learned how Pandas can group and compare events by IP address, while Matplotlib can turn web status counts into a graph. The lab showed me that a script’s results depend on the data and thresholds: an empty result does not always mean the script failed; the activity might not meet the detection criteria.
+
+## What I could improve
+
+I could improve the project by storing credentials in environment variables or a secrets manager instead of a configuration file, and by ensuring no passwords or sensitive logs are included in a public repository. I could also make the scripts more reliable by validating configuration values, handling connection and file errors separately, and reporting clear success or failure messages.
+
+For the analysis, I could add date-range options, make detection thresholds configurable, and test the scripts with both normal activity and known suspicious sample data. I could also improve the reports by recording when each collection ran and adding more context to each alert.
