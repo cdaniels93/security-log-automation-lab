@@ -1,6 +1,6 @@
 # Security Log Collection and Analysis Automation
 
-This lab explored how security teams collect and review computer activity records called logs.
+In this lab, I collected and analyzed activity logs from Linux, Windows, and a web server. I used Linux commands and regular expressions to review failed logins, PowerShell to export Windows Security events, and Python to collect, filter, and analyze the logs. I also used Pandas and Matplotlib to summarize activity, create a graph, and generate reports, then verified that the alert script sent an email. These exercises show how automation can help security teams review activity across different systems and investigate suspicious events.
 
 ## Manual Linux log review
 
